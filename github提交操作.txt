@@ -1,0 +1,5 @@
+//添加所有文件下的目录到暂存区
+git add .
+git commit -m "first commit" //把文件提交到仓库
+git remote add origin git@github.com:wangjiax9/practice.git //关联远程仓库
+git push -u origin master //把本地库的所有内容推送到远程库上

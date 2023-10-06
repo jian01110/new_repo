@@ -1,0 +1,113 @@
+
+高子健@LAPTOP-0MBI177M MINGW64 ~/Software_Engineering_Test- (master)
+$ git remote -v
+origin  https://github.com/zonesyu/Software_Engineering_Test-.git (fetch)
+origin  https://github.com/zonesyu/Software_Engineering_Test-.git (push)
+
+高子健@LAPTOP-0MBI177M MINGW64 ~/Software_Engineering_Test- (master)
+$ git remote -add origin https://github.com/jian01110/Software_Engineering_Test-.git
+error: did you mean `--add` (with two dashes)?
+
+高子健@LAPTOP-0MBI177M MINGW64 ~/Software_Engineering_Test- (master)
+$ git remote add origin https://github.com/jian01110/Software_Engineering_Test-.git
+
+error: remote origin already exists.
+
+高子健@LAPTOP-0MBI177M MINGW64 ~/Software_Engineering_Test- (master)
+$ git remote add Test https://github.com/jian01110/Software_Engineering_Test-.git
+
+高子健@LAPTOP-0MBI177M MINGW64 ~/Software_Engineering_Test- (master)
+$ git remote -v
+Test    https://github.com/jian01110/Software_Engineering_Test-.git (fetch)
+Test    https://github.com/jian01110/Software_Engineering_Test-.git (push)
+origin  https://github.com/zonesyu/Software_Engineering_Test-.git (fetch)
+origin  https://github.com/zonesyu/Software_Engineering_Test-.git (push)
+
+
+
+高子健@LAPTOP-0MBI177M MINGW64 ~/Software_Engineering_Test- (master)
+$ git pull Test master --allow-unrelated-histories
+remote: Enumerating objects: 23, done.
+remote: Counting objects: 100% (23/23), done.
+remote: Compressing objects: 100% (13/13), done.
+remote: Total 19 (delta 2), reused 14 (delta 1), pack-reused 0
+Unpacking objects: 100% (19/19), 2.01 KiB | 20.00 KiB/s, done.
+From https://github.com/jian01110/Software_Engineering_Test-
+ * branch            master     -> FETCH_HEAD
+ * [new branch]      master     -> Test/master
+Merge made by the 'ort' strategy.
+ test.txt                                                                | 0
+ "\344\275\234\344\270\2321/keep.txt"                                    | 1 +
+ "\344\275\234\344\270\2321/mytest.txt"                                  | 1 +
+ "\344\275\234\344\270\2322/keep.txt"                                    | 1 +
+ .../\344\275\234\344\270\2321/keep.txt"                                 | 2 +-
+ 5 files changed, 4 insertions(+), 1 deletion(-)
+ create mode 100644 test.txt
+ create mode 100644 "\344\275\234\344\270\2321/keep.txt"
+ create mode 100644 "\344\275\234\344\270\2321/mytest.txt"
+ create mode 100644 "\344\275\234\344\270\2322/keep.txt"
+
+高子健@LAPTOP-0MBI177M MINGW64 ~/Software_Engineering_Test- (master)
+$ git add .
+warning: adding embedded git repository: Software_Engineering_Test-
+hint: You've added another git repository inside your current repository.
+hint: Clones of the outer repository will not contain the contents of
+hint: the embedded repository and will not know how to obtain it.
+hint: If you meant to add a submodule, use:
+hint:
+hint:   git submodule add <url> Software_Engineering_Test-
+hint:
+hint: If you added this path by mistake, you can remove it from the
+hint: index with:
+hint:
+hint:   git rm --cached Software_Engineering_Test-
+hint:
+hint: See "git help submodule" for more information.
+
+高子健@LAPTOP-0MBI177M MINGW64 ~/Software_Engineering_Test- (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 7 commits.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   Software_Engineering_Test-
+        new file:   "\351\253\230\345\255\220\345\201\245/haha.txt"
+        deleted:    "\351\253\230\345\255\220\345\201\245/\344\275\234\344\270\2321/mytest.txt"
+
+
+高子健@LAPTOP-0MBI177M MINGW64 ~/Software_Engineering_Test- (master)
+$ git commit -m"Test"
+[master 3c05233] Test
+ 3 files changed, 1 insertion(+), 1 deletion(-)
+ create mode 160000 Software_Engineering_Test-
+ create mode 100644 "\351\253\230\345\255\220\345\201\245/haha.txt"
+ delete mode 100644 "\351\253\230\345\255\220\345\201\245/\344\275\234\344\270\2321/mytest.txt"
+
+高子健@LAPTOP-0MBI177M MINGW64 ~/Software_Engineering_Test- (master)
+$ git push
+Enumerating objects: 29, done.
+Counting objects: 100% (29/29), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (20/20), done.
+Writing objects: 100% (23/23), 2.21 KiB | 1.10 MiB/s, done.
+Total 23 (delta 5), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (5/5), completed with 1 local object.
+To https://github.com/zonesyu/Software_Engineering_Test-.git
+   c88d4dc..3c05233  master -> master
+
+高子健@LAPTOP-0MBI177M MINGW64 ~/Software_Engineering_Test- (master)
+$ git push Test master
+Enumerating objects: 18, done.
+Counting objects: 100% (18/18), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (11/11), done.
+Writing objects: 100% (12/12), 1.19 KiB | 1.19 MiB/s, done.
+Total 12 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (3/3), completed with 2 local objects.
+To https://github.com/jian01110/Software_Engineering_Test-.git
+   f1d5583..3c05233  master -> master
+
+高子健@LAPTOP-0MBI177M MINGW64 ~/Software_Engineering_Test- (master)
+$
