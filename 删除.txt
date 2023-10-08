@@ -1,0 +1,26 @@
+高子健@LAPTOP-0MBI177M MINGW64 ~/newrepo (main)
+$ dir
+README.md  adapter  github提交操作.txt  关联远程文档.txt  我的作业笔记.txt
+
+高子健@LAPTOP-0MBI177M MINGW64 ~/newrepo (main)
+$ git rm -r --cached 我的作业笔记.txt
+rm '我的作业笔记.txt'
+
+高子健@LAPTOP-0MBI177M MINGW64 ~/newrepo (main)
+$ git commit -m "删除"
+[main c961b67] 删除
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ delete mode 100644 "\346\210\221\347\232\204\344\275\234\344\270\232\347\254\224\350\256\260.txt"
+
+高子健@LAPTOP-0MBI177M MINGW64 ~/newrepo (main)
+$ git push -u origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 225 bytes | 225.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/jian01110/new_repo.git
+   dcab831..c961b67  main -> main
+branch 'main' set up to track 'origin/main'.
