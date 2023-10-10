@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="lib-RELEASE">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/../../../spring/Spring框架开发资料包/jar/spring-framework-5.2.9.RELEASE/lib-RELEASE" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <jarDirectory url="file://$PROJECT_DIR$/../../../spring/Spring框架开发资料包/jar/spring-framework-5.2.9.RELEASE/lib-RELEASE" recursive="false" />
+  </library>
+</component>

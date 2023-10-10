@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                        https://www.springframework.org/schema/beans/spring-beans.xsd
+                        http://www.springframework.org/schema/context
+                        https://www.springframework.org/schema/context/spring-context.xsd
+                        http://www.springframework.org/schema/aop
+                        https://www.springframework.org/schema/aop/spring-aop.xsd"
+>
+    <context:component-scan base-package="com.software.aop"></context:component-scan>
+    <aop:aspectj-autoproxy></aop:aspectj-autoproxy>
+<!--    <bean name="student" class="com.software.d4.Student"></bean>-->
+<!--    <bean name="studybefore" class="com.software.d4.StudyBefore"></bean>-->
+<!--    <bean name="studentafter" class="com.software.d4.StudentAfter"></bean>-->
+<!--    <bean name="studentaround" class="com.software.d4.StudyAround"></bean>-->
+<!--    <bean name="studentproxy" class="org.springframework.aop.framework.ProxyFactoryBean">-->
+<!--        <property name="target" ref="student"></property>-->
+<!--        <property name="proxyInterfaces" value="com.software.d4.StudentStudy"></property>-->
+<!--        <property name="interceptorNames" value="studentaround"></property>-->
+
+<!--    </bean>-->
+<!--    <bean name="userService" class="com.software.demo4.UserServiceImpl"></bean>-->
+<!--    <bean name="userServiceBefore" class="com.software.demo4.UserServiceBefore"></bean>-->
+<!--    <bean name="userServiceAfterReturning" class="com.software.demo4.UserServiceAfterReturning"></bean>-->
+<!--    <bean name="userServiceAround" class="com.software.demo4.UserServiceAround"></bean>-->
+<!--    <bean name="userServiceThrowable" class="com.software.demo4.UserServiceThrowable"></bean>-->
+    <!-- 前置通知 -->
+<!--    <bean name="userProxy" class="org.springframework.aop.framework.ProxyFactoryBean">-->
+<!--        <property name="target" ref="userService"></property>-->
+<!--        <property name="proxyInterfaces" value="com.software.demo4.UserService"></property>-->
+<!--        <property name="interceptorNames" value="userServiceBefore"></property>-->
+<!--    </bean>-->
+    <!-- 后置通知 -->
+<!--        <bean name="userProxy" class="org.springframework.aop.framework.ProxyFactoryBean">-->
+<!--            <property name="target" ref="userService"></property>-->
+<!--            <property name="proxyInterfaces" value="com.software.demo4.UserService"></property>-->
+<!--            <property name="interceptorNames" value="userServiceAfterReturning"></property>-->
+<!--        </bean>-->
+    <!-- 环绕通知 -->
+<!--    <bean name="userProxy" class="org.springframework.aop.framework.ProxyFactoryBean">-->
+<!--        <property name="target" ref="userService"></property>-->
+<!--        <property name="proxyInterfaces" value="com.software.demo4.UserService"></property>-->
+<!--        <property name="interceptorNames" value="userServiceAround"></property>-->
+<!--    </bean>-->
+    <!-- 异常通知 -->
+<!--    <bean name="userProxy" class="org.springframework.aop.framework.ProxyFactoryBean">-->
+<!--        <property name="target" ref="userService"></property>-->
+<!--        <property name="proxyInterfaces" value="com.software.demo4.UserService"></property>-->
+<!--        <property name="interceptorNames" value="userServiceThrowable"></property>-->
+<!--    </bean>-->
+</beans>
